@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopNow</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link href="https://css.gg/css" rel="stylesheet" />
+    <script src="./js/app.js" type="module"></script>
+    <script src="./js/navigation.js"></script>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <span id="products-page" class="gg-home icon active-tab"></span>
+      <span id="statistics-page" class="gg-insights icon"></span>
+      <span id="add-product-page" class="gg-add-r icon"></span>
+    </aside>
+    <main class="container">
+      <header>
+        <h1 class="logo">ShopNow</h1>
+        <!-- <div class="user">
+          <div class="name">
+            <h3>Nadia ELHADRI</h3>
+            <div class="gg-log-out"></div>
+          </div>
+        </div> -->
+      </header>
+      <section class="filters products-page">
+        <div>
+          <label for="search">Search</label>
+          <div class="input">
+            <input type="text" id="search" placeholder="Type here..." />
+            <i class="gg-search"></i>
+          </div>
+        </div>
+        <div>
+          <label for="category-filter">Category</label>
+          <div class="input">
+            <select id="category-filter">
+              <option value="all" selected>All</option>
+              <option value="phones">Phones</option>
+              <option value="laptops">Laptops</option>
+              <option value="tablets">Tablets</option>
+            </select>
+            <i class="gg-smartphone"></i>
+          </div>
+        </div>
+        <div>
+          <label for="sort">Sort By</label>
+          <div class="input">
+            <select name="sort" id="sort">
+              <option value="added_at:desc" selected>Latest Added</option>
+              <option value="added_at:asc">Earliest Added</option>
+              <option value="quantity:desc">Highest Quantity</option>
+              <option value="quantity:asc">Lowest Quantity</option>
+              <option value="price:desc">Highest Price</option>
+              <option value="price:asc">Lowest Price</option>
+            </select>
+            <i class="gg-sort-az"></i>
+          </div>
+        </div>
+      </section>
+      <section class="products products-page"></section>
+      <section class="statistics-page">
+        <section class="statistics">
+          <div class="statistic-container">
+            <h4 class="statistic-title">Total Products</h4>
+            <div class="statistic-content">
+              <h3 class="statistic-number statistics-total-products"></h3>
+              <div class="gg-box statistic-icon"></div>
+            </div>
+          </div>
+          <div class="statistic-container">
+            <h4 class="statistic-title">Total Cost</h4>
+            <div class="statistic-content">
+              <h3 class="statistic-number statistics-total-cost"></h3>
+              <div class="gg-dollar statistic-icon"></div>
+            </div>
+          </div>
+          <div class="statistic-container">
+            <h4 class="statistic-title">Total Quantities</h4>
+            <div class="statistic-content">
+              <h3 class="statistic-number statistics-total-quantities"></h3>
+              <div class="gg-box statistic-icon"></div>
+            </div>
+          </div>
+        </section>
+        <div class="chart-container">
+          <canvas id="chart" style="max-height: 40vmin; width: 100%"></canvas>
+        </div>
+      </section>
+      <section class="add-product-page">
+        <div class="headings">
+          <h2 class="title">Add Product</h2>
+        </div>
+        <form id="add-product-form">
+          <div class="inputs">
+            <div class="input">
+              <label for="Name">Name </label>
+              <input type="text" id="name" />
+            </div>
+            <div class="input">
+              <label for="price">Price</label>
+              <input type="text" id="price" />
+            </div>
+            <div class="input">
+              <label for="quantity">Quantity</label>
+              <input type="text" id="quantity" />
+            </div>
+            <div class="input">
+              <label for="category">Category</label>
+              <select id="category">
+                <option value="phones">Phones</option>
+                <option value="laptops">Laptops</option>
+                <option value="tablets">Tablets</option>
+              </select>
+            </div>
+            <div class="input">
+              <label for="image">Image</label>
+              <input type="file" accept="image/*" id="image" />
+            </div>
+
+            <input type="submit" value="Add" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <!-- Modals -->
+    <div class="modal delete-product-modal">
+      <div class="modal-content delete-product-modal-content"></div>
+    </div>
+    <div class="modal edit-product-modal">
+      <div class="modal-content edit-product-modal-content"></div>
+    </div>
+  </body>
+</html>
