@@ -24,4 +24,4 @@ UML Diagrams :
 
 ## Mockups & Prototyping
 
-You can preview the Figma file [HERE](https://www.figma.com/proto/6JTwgooyVt0zsoVSGKk3Ak/Brief-4?node-id=11%3A10&scaling=contain&page-id=0%3A1&starting-point-node-id=11%3A10)
+You can preview the Figma file [HERE](https://www.figma.com/proto/NfmPUC703aA0HZ1cXbMI2F/ShopNow?node-id=202%3A736&scaling=contain&page-id=0%3A1&starting-point-node-id=159%3A839&show-proto-sidebar=1)
