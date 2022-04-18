@@ -2,6 +2,10 @@
 
 Conception and Development of an Application to manage the inventory of a store.
 
+## Demo
+
+<img src="assets/demo.gif" alt="Demo" />
+
 ## Conception
 
 UML Diagrams :
